@@ -15,13 +15,15 @@ import { APP_ROUTES } from "./app.routes";
 import { PanierService } from "./shared/services/panier.service";
 import { CocktailFormComponent } from "./cocktail-container/cocktail-form/cocktail-form.component";
 import { FilterPipe } from "./shared/pipes/filter.pipe";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule.forRoot(APP_ROUTES)
+    RouterModule.forRoot(APP_ROUTES),
+    HttpClientModule
   ],
   declarations: [
     AppComponent,
